@@ -1,0 +1,26 @@
+name: profiling-env
+
+channels:
+- pytorch
+- nvidia
+- defaults
+
+dependencies:
+  - python=3.9
+  - pytorch
+  - pytorch-cuda
+  - transformers
+  - nltk
+  - scipy
+  - scikit-learn
+  - pandas
+  - matplotlib
+  - jupyter
+  - pip
+  - pip:
+      - accelerate
+ 
+
+### create and remove with
+#conda env create -f profiling-env.yaml
+#conda remove --name profiling-env --all
